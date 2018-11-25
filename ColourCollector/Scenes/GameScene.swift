@@ -36,7 +36,7 @@ class GameScene: SKScene {
     }
     
     func setupPhysics() {
-        physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.5)
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -3.5)
         physicsWorld.contactDelegate = self
     }
     
@@ -44,10 +44,10 @@ class GameScene: SKScene {
         backgroundColor = UIColor(red: 44/255, green: 62/255, blue: 80/255, alpha: 1.0)
         
         colourSwitch = SKSpriteNode(imageNamed: "colourSwitch")
-        colourSwitch.size = CGSize(width: frame.size.width/2, height: frame.size.width/2)
-        colourSwitch.position = CGPoint(x: frame.midX, y: frame.minY + colourSwitch.size.height/2)
+        colourSwitch.size = CGSize(width: frame.size.width/1.4, height: frame.size.width/1.4)
+        colourSwitch.position = CGPoint(x: frame.midX, y: frame.minY + colourSwitch.size.height/1.5)
         colourSwitch.zPosition = ZPositions.colourSwitch
-        colourSwitch.physicsBody = SKPhysicsBody(circleOfRadius: colourSwitch.size.width/2)
+        colourSwitch.physicsBody = SKPhysicsBody(circleOfRadius: colourSwitch.size.width/5)
         colourSwitch.physicsBody?.categoryBitMask = PhysicsCategories.switchCategory
         colourSwitch.physicsBody?.isDynamic = false
         addChild(colourSwitch)

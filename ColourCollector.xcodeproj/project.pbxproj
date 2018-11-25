@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		F31D736D21AA6F0F00AD4340 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D736C21AA6F0F00AD4340 /* Settings.swift */; };
 		F31D736F21AA7BF300AD4340 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D736E21AA7BF300AD4340 /* MenuScene.swift */; };
+		F343F72221AA9B1300158462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F343F72121AA9B1300158462 /* Assets.xcassets */; };
+		F343F72621AAA0FD00158462 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = F343F72521AAA0FD00158462 /* ding.wav */; };
 		F37433F421AA6725006BA276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37433F321AA6725006BA276 /* AppDelegate.swift */; };
 		F37433FA21AA6725006BA276 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37433F921AA6725006BA276 /* GameScene.swift */; };
 		F37433FC21AA6725006BA276 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37433FB21AA6725006BA276 /* GameViewController.swift */; };
 		F37433FF21AA6725006BA276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37433FD21AA6725006BA276 /* Main.storyboard */; };
-		F374340121AA6725006BA276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F374340021AA6725006BA276 /* Assets.xcassets */; };
 		F374340421AA6725006BA276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F374340221AA6725006BA276 /* LaunchScreen.storyboard */; };
 		F374340F21AA6726006BA276 /* ColourCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374340E21AA6726006BA276 /* ColourCollectorTests.swift */; };
 		F374341A21AA6726006BA276 /* ColourCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374341921AA6726006BA276 /* ColourCollectorUITests.swift */; };
@@ -39,12 +40,13 @@
 /* Begin PBXFileReference section */
 		F31D736C21AA6F0F00AD4340 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F31D736E21AA7BF300AD4340 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		F343F72121AA9B1300158462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		F343F72521AAA0FD00158462 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		F37433F021AA6725006BA276 /* ColourCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColourCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37433F321AA6725006BA276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37433F921AA6725006BA276 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		F37433FB21AA6725006BA276 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F37433FE21AA6725006BA276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F374340021AA6725006BA276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F374340321AA6725006BA276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F374340521AA6725006BA276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F374340A21AA6726006BA276 /* ColourCollectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColourCollectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +111,7 @@
 		F31D736B21AA6AA300AD4340 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F374340021AA6725006BA276 /* Assets.xcassets */,
+				F343F72121AA9B1300158462 /* Assets.xcassets */,
 				F374340221AA6725006BA276 /* LaunchScreen.storyboard */,
 				F37433FD21AA6725006BA276 /* Main.storyboard */,
 			);
@@ -139,6 +141,7 @@
 		F37433F221AA6725006BA276 /* ColourCollector */ = {
 			isa = PBXGroup;
 			children = (
+				F343F72521AAA0FD00158462 /* ding.wav */,
 				F374340521AA6725006BA276 /* Info.plist */,
 				F31D736B21AA6AA300AD4340 /* Assets */,
 				F31D736A21AA6A9900AD4340 /* Template */,
@@ -271,7 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37433FF21AA6725006BA276 /* Main.storyboard in Resources */,
-				F374340121AA6725006BA276 /* Assets.xcassets in Resources */,
+				F343F72221AA9B1300158462 /* Assets.xcassets in Resources */,
+				F343F72621AAA0FD00158462 /* ding.wav in Resources */,
 				F374340421AA6725006BA276 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
