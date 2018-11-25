@@ -36,7 +36,7 @@ class GameScene: SKScene {
     }
     
     func setupPhysics() {
-        physicsWorld.gravity = CGVector(dx: 0.0, dy: -1.5)
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.5)
         physicsWorld.contactDelegate = self
     }
     
@@ -44,8 +44,8 @@ class GameScene: SKScene {
         backgroundColor = UIColor(red: 44/255, green: 62/255, blue: 80/255, alpha: 1.0)
         
         colourSwitch = SKSpriteNode(imageNamed: "colourSwitch")
-        colourSwitch.size = CGSize(width: frame.size.width/3, height: frame.size.width/3)
-        colourSwitch.position = CGPoint(x: frame.midX, y: frame.midY + colourSwitch.size.height)
+        colourSwitch.size = CGSize(width: frame.size.width/2, height: frame.size.width/2)
+        colourSwitch.position = CGPoint(x: frame.midX, y: frame.minY + colourSwitch.size.height/2)
         colourSwitch.zPosition = ZPositions.colourSwitch
         colourSwitch.physicsBody = SKPhysicsBody(circleOfRadius: colourSwitch.size.width/2)
         colourSwitch.physicsBody?.categoryBitMask = PhysicsCategories.switchCategory
@@ -69,10 +69,10 @@ class GameScene: SKScene {
     func spawnBall() {
         currentColourIndex = Int(arc4random_uniform(UInt32(4)))
         
-        let ball = SKSpriteNode(texture: SKTexture(imageNamed: "ball"), color: PlayColours.colours[currentColourIndex!], size: CGSize(width: 30.0, height: 30.0))
+        let ball = SKSpriteNode(texture: SKTexture(imageNamed: "ball"), color: PlayColours.colours[currentColourIndex!], size: CGSize(width: 42.0, height: 35.0))
         ball.colorBlendFactor = 1.0
         ball.name = "Ball"
-        ball.position = CGPoint(x: frame.midX, y: frame.midY)
+        ball.position = CGPoint(x: frame.midX, y: frame.maxY)
         ball.zPosition = ZPositions.ball
         ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width/2)
         ball.physicsBody?.categoryBitMask = PhysicsCategories.ballCategory

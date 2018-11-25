@@ -18,7 +18,7 @@ class MenuScene: SKScene {
     
     func addLogo() {
         let logo = SKSpriteNode(imageNamed: "logo")
-        logo.size = CGSize(width: frame.width/4, height: frame.width/4)
+        logo.size = CGSize(width: 1.5*frame.width/2.5, height: 1.5*frame.width/3)
         logo.position = CGPoint(x: frame.midX, y: frame.midY + frame.size.height/4)
         addChild(logo)
     }
@@ -51,10 +51,10 @@ class MenuScene: SKScene {
         let fadeOut = SKAction.fadeOut(withDuration: 0.5)
         let fadeIn = SKAction.fadeIn(withDuration: 0.5)
         
-        let scaleUp = SKAction.scale(by: 1.1, duration: 0.5)
-        let scaleDown = SKAction.scale(by: 1.0, duration: 0.5)
+//        let scaleUp = SKAction.scale(by: 1.1, duration: 0.5)
+//        let scaleDown = SKAction.scale(by: 1.0, duration: 0.5)
         
-        let sequence = SKAction.sequence([scaleUp,scaleDown])
+        let sequence = SKAction.sequence([fadeOut,fadeIn])
         label.run(SKAction.repeatForever(sequence))
     }
     
