@@ -6,9 +6,9 @@ Dylan Fu
 Simple Swift application where the user can play a game based on Color Switch
 
 ## Requirements
-iOS 11+
-Xcode 9+
-Swift 4+
+iOS 11+  
+Xcode 9+  
+Swift 4+  
 
 ## Getting Started
 
