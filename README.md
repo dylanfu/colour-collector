@@ -1,4 +1,4 @@
-# Color Collector
+# Colour Collector
 
 Dylan Fu
 
